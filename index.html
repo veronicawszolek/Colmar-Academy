@@ -5,20 +5,31 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
-    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/images/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="resources/images/favicon2.ico" type="image/x-icon">
   </head>
   <body>
 
     <!--HEADER-->
     <header class="flex">
-      <img src="resources/images/ic-logo.svg">
-      <p><span>colmar</span>academy<p>
-      <nav>
-        <span><a href="#">On campus</a></span>
-        <span><a href="#">Online</a></span>
-        <span><a href="#">Our companies</a></span>
-        <span><a href="#">Sign in</a></span>
+      <div class="logo flex">
+        <img src="resources/images/ic-logo.svg" alt="logo">
+        <p><span>colmar</span>academy<p>
+      </div>
+      <nav class="nav-desktop">
+        <ul class="flex" role="presentation">
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">Our companies</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-mobile">
+        <ul class="flex" role="presentation">
+          <li><a href="#"><img src="resources/images/ic-on-campus.svg" alt="on campus icon"></a></li>
+          <li><a href="#"><img src="resources/images/ic-online.svg" alt="online icon"></a></li>
+          <li><a href="#"><img src="resources/images/ic-login.svg" alt="login icon"></a></li>
+        </ul>
       </nav>
     </header>
 
@@ -29,14 +40,14 @@
         <h1>Learn something new everyday</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="button">
-          <p>Start here</p>
+          <a href="#">Start here</a>
         </div>
       </div>
     </div>
 
     <!--INFO-->
     <div class="info flex">
-      <div class="practicing">
+      <div class="practicing" role="complementary">
         <img src="resources/images/information-main.jpg">
         <div class="practicing-text">
           <h2>It doesn't hurt to keep practicing</h2>
@@ -46,7 +57,8 @@
       </div>
       <div class="articles flex">
         <article class="flex">
-          <img src="resources/images/information-orientation.jpg">
+          <img class="desktop" src="resources/images/information-orientation.jpg">
+          <img class="mobile" src="resources/images/information-orientation-mobile.jpg">
           <div class="details">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -54,7 +66,8 @@
           </div>
         </article>
         <article class="flex">
-          <img src="resources/images/information-campus.jpg">
+          <img class="desktop" src="resources/images/information-campus.jpg">
+          <img class="mobile" src="resources/images/information-campus-mobile.jpg">
           <div class="details">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
@@ -62,7 +75,8 @@
           </div>
         </article>
         <article class="flex">
-          <img src="resources/images/information-guest-lecture.jpg">
+          <img class="desktop" src="resources/images/information-guest-lecture.jpg">
+          <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg">
           <div class="details">
             <h3>Our quest lecture</h3>
             <p>Join a keynote wih Oliver Sack about music in medical treatment</p>
@@ -132,20 +146,20 @@
       <h2>Thesis exhibit</h2>
       <div class="content flex">
         <div class="urban flex">
-          <video src="resources/videos/thesis.mp4" controls>Video not supported</video>
+          <video src="resources/videos/thesis.mp4" controls alt="sun analysis">Video not supported</video>
           <h3>Reimagine urban</h3>
-          <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint."</p>
+          <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint. Curabitur vitae libero ipsum porttior consequat. "</p>
         </div>
         <div class="articles2 flex">
           <article class="flex">
-            <img src="resources/images/thesis-fisma.jpg">
+            <img class="desktop" src="resources/images/thesis-fisma.jpg">
             <div class="details">
               <h3>Fisma: Design and</h3>
               <p>Designer showcase of new prototype product</p>
             </div>
           </article>
           <article class="flex">
-            <img src="resources/images/thesis-now-and-then.jpg">
+            <img class="desktop" src="resources/images/thesis-now-and-then.jpg">
             <div class="details">
               <h3>Now and then</h3>
               <p>Research study about New York</p>
